@@ -23,66 +23,208 @@
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light header-style">
-      <div class="container">
-        <!-- Logo + Tên web -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="images/logo1.png"
-            alt="Logo"
-            width="60"
-            height="60"
-            class="me-2"
-          />
-          <span class="fw-bold text-white">My Health by HoangDuc</span> </a
-        ><!-- Nút toggle khi thu nhỏ -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Menu bên phải -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Trang chủ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chỉ số</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Bài viết</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tư vấn</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Liên Hệ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link login-style" href="#">
-                <i class="bi bi-person-circle me-1"></i> Đăng nhập
-              </a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light header-style">
+        <div class="container mb-2 mt-2">
+          <!-- Logo + Tên web -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="images/logo1.png"
+              alt="Logo"
+              width="60"
+              height="60"
+              class="me-2"
+            />
+            <span class="fw-bold text-white">My Health by HoangDuc</span> </a
+          ><!-- Nút toggle khi thu nhỏ -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menu bên phải -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="health.html">Chỉ số</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="article.html">Bài viết</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="advise.html">Tư vấn</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="lienheDropdown"
+                  role="button"
+                >
+                  Liên hệ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="lienheDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="mailto:hoangminhduc21052003@gmail.com"
+                      >📧 Gmail</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tel:0329801850">📞 SĐT</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://zalo.me/0329801850"
+                      target="_blank"
+                      >💬 Zalo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.facebook.com/hoangduc.mr.four"
+                      target="_blank"
+                      >👍 Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.youtube.com/@hoangduc.2003"
+                      target="_blank"
+                      >▶️ YouTube</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link login-style" href="login.html">
+                  <i class="bi bi-person-circle me-1"></i> Đăng nhập
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="text-center p-5 bg-stylee">
+        <h1>Chào mừng bạn đến với My Health by HoangDuc</h1>
+        <p>
+          Chúng tôi đồng hành cùng bạn trong hành trình sống khỏe mạnh và khoa
+          học. Theo dõi chỉ số, hiểu rõ cơ thể, và chăm sóc sức khỏe tốt hơn mỗi
+          ngày.
+        </p>
+        <a href="login.html" class="btn btn-light btn-lg mt-3 btn-batdaungay"
+          >Bắt đầu ngay
+        </a>
       </div>
-    </nav>
-    <main style="height: 3000px">Nội dung trang...</main>
+
+      <!-- Giới thiệu -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Về chúng tôi</h2>
+        <p class="text-center">
+          Website giúp bạn quản lý và theo dõi các chỉ số sức khỏe quan trọng.
+          Hãy bắt đầu hành trình sống khỏe mạnh và khoa học ngay hôm nay!<a
+            href="about.html"
+            >Tìm hiểu thêm</a
+          >
+        </p>
+      </section>
+
+      <!-- Chỉ số nổi bật -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Các chỉ số sức khỏe</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 card-hover">
+              <h4>BMI</h4>
+              <p>Chỉ số khối cơ thể</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 card-hover">
+              <h4>Huyết áp</h4>
+              <p>Theo dõi huyết áp định kỳ</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card p-3 card-hover">
+              <h4>Đường huyết</h4>
+              <p>Quản lý mức đường huyết</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bài viết mới -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Bài viết mới</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cách ăn uống lành mạnh</h5>
+                <p class="card-text">
+                  Những mẹo dinh dưỡng giúp bạn duy trì sức khỏe.
+                </p>
+                <a href="#" class="btn btn-primary card-hover">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Bài tập tốt cho tim mạch</h5>
+                <p class="card-text">
+                  Những bài tập đơn giản cho sức khỏe tim mạch.
+                </p>
+                <a href="#" class="btn btn-primary card-hover">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Ngủ ngon mỗi đêm</h5>
+                <p class="card-text">Mẹo giúp bạn cải thiện giấc ngủ.</p>
+                <a href="#" class="btn btn-primary card-hover">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Phần footer-->
     <footer class="footer text-white py-4 footer-style">
       <div class="container">
         <div class="row justify-content-center">
